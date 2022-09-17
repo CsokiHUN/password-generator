@@ -1,8 +1,6 @@
 // Original module:
 // https://www.npmjs.com/package/generate-password
 
-console.log(randomBytes)
-
 const RANDOM_BATCH_SIZE = 256;
 
 function getRandomBytes(n) {

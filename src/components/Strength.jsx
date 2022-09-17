@@ -1,8 +1,6 @@
-import {strength, setStrength} from '../stores'
+import {strength} from '../stores'
 
 function Strength() {
-    console.log(strength().score);
-
     return <>   
         <div class="flex justify-between bg-gray-900 text-gray-600 mt-3 p-3">
             STRENGTH
