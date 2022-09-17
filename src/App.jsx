@@ -25,8 +25,9 @@ function App() {
             Character Length
             <div class='text-green-400 text-2xl'>{config().length}</div>
           </div>
+
           <input
-            class='w-full mb-5'
+            class='mb-5 w-full h-2 rounded-lg appearance-none cursor-pointer bg-gray-700'
             type='range'
             value={config().length}
             onInput={({ target }) => setConfig({ ...config(), length: parseInt(target.value) })}
