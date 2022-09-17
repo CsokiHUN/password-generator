@@ -1,12 +1,15 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
+  "name": "password-generator",
+  "version": "1.0.0",
   "description": "",
+  "homepage": "https://csokihun.github.io/password-generator",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
   "devDependencies": {
