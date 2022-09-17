@@ -10,10 +10,6 @@ function Strength() {
                 </For>
             </div>
         </div>
-        <button class="bg-green-400/90 hover:bg-green-500 delay-100 transition-all shadow shadow-green-400 text-gray-800 w-full p-3 mt-4">
-            <span class="mr-4">Generate</span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
     </>
 }
 

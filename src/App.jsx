@@ -1,6 +1,6 @@
 import copy from 'clipboard-copy'
 
-import { config, result, setConfig } from "./stores";
+import { config, generateNew, result, setConfig } from "./stores";
 
 import Checks from "./components/Checks";
 import Strength from "./components/Strength";
@@ -10,7 +10,7 @@ function App() {
     <div class="bg-gray-900 text-gray-500 flex justify-center items-center h-screen select-none">
       <div>
         <h3 class="text-xl mb-4 text-center font-bold">
-          Password Generator
+          Password or
         </h3>
         <div class="flex justify-between items-center gap-2 p-4 bg-gray-800/90 text-xl">
           <input value={result()} class="bg-transparent select-text" type="text" placeholder="P4$5w0rd!" disabled />
@@ -28,6 +28,10 @@ function App() {
           <Checks/>
           <Strength></Strength>
         </div>
+        <button onClick={() => generateNew()} class="bg-green-400/90 hover:bg-green-500 delay-100 transition-all shadow shadow-green-400 text-gray-800 w-full p-3 mt-4">
+            <span class="mr-4">Generate</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
     </div>
   );
